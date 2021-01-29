@@ -1,0 +1,16 @@
+{
+  "name": "zbc",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "main": "index.js",
+  "author": "shiduobin",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.0"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy-gh": "GH=1 yarn docs:build && bash deploy.sh"
+  }
+}
