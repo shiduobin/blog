@@ -3,7 +3,7 @@
  # @Author: shiduobin
  # @Date: 2021-01-29 11:31:15
  # @LastEditors: shiduobin
- # @LastEditTime: 2021-01-29 11:33:32
+ # @LastEditTime: 2021-01-29 11:44:59
 ### 
 
 #!/usr/bin/env sh
@@ -26,6 +26,6 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
-git push -f git@github.com:shiduobin/blog.git main:gh-pages
+git push -f git@github.com:shiduobin/blog.git master:gh-pages
 
 cd -
