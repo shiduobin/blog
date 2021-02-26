@@ -12,7 +12,7 @@ module.exports = {
   ],
   base: "/blog/",
   dest: "./docs/.vuepress/dist",
-  plugins: [['vuepress-plugin-code-copy', true]],
+  plugins: [["vuepress-plugin-code-copy", true]],
   markdown: {
     lineNumbers: false,
   },
@@ -20,10 +20,14 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       {
+        text: "每日•壹题",
+        link: "/question/01",
+      },
+      {
         text: "学习",
         items: [
           { text: "JS基础", link: "/study/js/promise" },
-          { text: "CSS基础", link: "/study/css/math01" },
+          { text: "CSS基础", link: "/study/css/selected" },
         ],
       },
     ],
@@ -33,7 +37,7 @@ module.exports = {
       "/study/": [
         {
           title: "JS",
-          collapsable: false,
+          collapsable: true,
           children: [
             {
               title: "promise",
@@ -45,13 +49,20 @@ module.exports = {
         },
         {
           title: "CSS",
-          collapsable: false,
+          collapsable: true,
           children: [
-            { title: "第一节", path: "/study/css/math01" },
+            { title: "选择器", path: "/study/css/selected" },
             { title: "第二节", path: "/study/css/math02" },
             { title: "第三节", path: "/study/css/math03" },
           ],
         },
+      ],
+      "/question/": [
+        {
+          title: "第一题",
+          collapsable: false,
+          path: "/question/01"
+        }
       ],
     },
   },
