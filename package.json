@@ -14,6 +14,7 @@
     "deploy-gh": "GH=1 yarn docs:build && bash deploy.sh"
   },
   "dependencies": {
-    "vuepress-plugin-code-copy": "^1.0.6"
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-run": "^1.0.2"
   }
 }

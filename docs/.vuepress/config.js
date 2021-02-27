@@ -1,3 +1,5 @@
+var sidebar = require("./router");
+
 module.exports = {
   title: "博客",
   description: "个人随记📒",
@@ -12,7 +14,12 @@ module.exports = {
   ],
   base: "/blog/",
   dest: "./docs/.vuepress/dist",
-  plugins: [["vuepress-plugin-code-copy", true]],
+  plugins: {
+    "vuepress-plugin-code-copy": false,
+    run: {
+      height: "auto",
+    },
+  },
   markdown: {
     lineNumbers: false,
   },
@@ -50,19 +57,15 @@ module.exports = {
         {
           title: "CSS",
           collapsable: true,
-          children: [
-            { title: "选择器", path: "/study/css/selected" },
-            { title: "第二节", path: "/study/css/math02" },
-            { title: "第三节", path: "/study/css/math03" },
-          ],
+          children: [{ title: "选择器", path: "/study/css/selected" }],
         },
       ],
       "/question/": [
         {
           title: "第一题",
-          collapsable: false,
-          path: "/question/01"
-        }
+          collapsable: true,
+          path: "/question/01",
+        },
       ],
     },
   },

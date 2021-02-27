@@ -813,6 +813,11 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/standalone@^7.9.4":
+  version "7.13.8"
+  resolved "https://registry.npm.taobao.org/@babel/standalone/download/@babel/standalone-7.13.8.tgz#0bec5b3d61e7753b89ef84c8f306610e033d74ff"
+  integrity sha1-C+xbPWHndTuJ74TI8wZhDgM9dP8=
+
 "@babel/template@^7.0.0", "@babel/template@^7.10.4", "@babel/template@^7.12.7":
   version "7.12.7"
   resolved "https://registry.npm.taobao.org/@babel/template/download/@babel/template-7.12.7.tgz?cache=0&sync_timestamp=1605904643326&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Ftemplate%2Fdownload%2F%40babel%2Ftemplate-7.12.7.tgz#c817233696018e39fbb6c491d2fb684e05ed43bc"
@@ -2187,6 +2192,11 @@ coa@^2.0.2:
     chalk "^2.4.1"
     q "^1.1.2"
 
+codemirror@^5.41.0:
+  version "5.59.4"
+  resolved "https://registry.npm.taobao.org/codemirror/download/codemirror-5.59.4.tgz?cache=0&sync_timestamp=1614162309938&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcodemirror%2Fdownload%2Fcodemirror-5.59.4.tgz#bfc11c8ce32b04818e8d661bbd790a94f4b3a6f3"
+  integrity sha1-v8EcjOMrBIGOjWYbvXkKlPSzpvM=
+
 collection-visit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/collection-visit/download/collection-visit-1.0.0.tgz#4bc0373c164bc3291b4d368c829cf1a80a59dca0"
@@ -2570,6 +2580,11 @@ css-tree@^1.1.2:
     mdn-data "2.0.14"
     source-map "^0.6.1"
 
+css-vars-ponyfill@^2.2.1:
+  version "2.4.3"
+  resolved "https://registry.npm.taobao.org/css-vars-ponyfill/download/css-vars-ponyfill-2.4.3.tgz#320a5b47d36d86d5175e41ee85e56a126b64b9b4"
+  integrity sha1-MgpbR9NthtUXXkHuheVqEmtkubQ=
+
 css-what@^3.2.1:
   version "3.4.2"
   resolved "https://registry.npm.taobao.org/css-what/download/css-what-3.4.2.tgz#ea7026fcb01777edbde52124e21f327e7ae950e4"
@@ -2749,6 +2764,11 @@ deepmerge@^1.5.2:
   resolved "https://registry.npm.taobao.org/deepmerge/download/deepmerge-1.5.2.tgz?cache=0&sync_timestamp=1606805746825&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdeepmerge%2Fdownload%2Fdeepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
   integrity sha1-EEmdhohEza1P7ghC34x/bwyVp1M=
 
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.npm.taobao.org/deepmerge/download/deepmerge-4.2.2.tgz?cache=0&sync_timestamp=1606805746825&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdeepmerge%2Fdownload%2Fdeepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha1-RNLqNnm49NT/ujPwPYZfwee/SVU=
+
 default-gateway@^4.2.0:
   version "4.2.0"
   resolved "https://registry.npm.taobao.org/default-gateway/download/default-gateway-4.2.0.tgz?cache=0&sync_timestamp=1610365816953&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdefault-gateway%2Fdownload%2Fdefault-gateway-4.2.0.tgz#167104c7500c2115f6dd69b0a536bb8ed720552b"
@@ -2836,6 +2856,11 @@ detect-node@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npm.taobao.org/detect-node/download/detect-node-2.0.4.tgz#014ee8f8f669c5c58023da64b8179c083a28c46c"
   integrity sha1-AU7o+PZpxcWAI9pkuBecCDooxGw=
+
+diff-match-patch@^1.0.0:
+  version "1.0.5"
+  resolved "https://registry.npm.taobao.org/diff-match-patch/download/diff-match-patch-1.0.5.tgz#abb584d5f10cd1196dfc55aa03701592ae3f7b37"
+  integrity sha1-q7WE1fEM0Rlt/FWqA3AVkq4/ezc=
 
 diffie-hellman@^5.0.0:
   version "5.0.3"
@@ -6454,6 +6479,11 @@ schema-utils@^2.6.5:
     ajv "^6.12.4"
     ajv-keywords "^3.5.2"
 
+screenfull@^5.0.2:
+  version "5.1.0"
+  resolved "https://registry.npm.taobao.org/screenfull/download/screenfull-5.1.0.tgz?cache=0&sync_timestamp=1608796473351&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fscreenfull%2Fdownload%2Fscreenfull-5.1.0.tgz#85c13c70f4ead4c1b8a935c70010dfdcd2c0e5c8"
+  integrity sha1-hcE8cPTq1MG4qTXHABDf3NLA5cg=
+
 section-matter@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/section-matter/download/section-matter-1.0.0.tgz#e9041953506780ec01d59f292a19c7b850b84167"
@@ -7072,6 +7102,11 @@ text-table@^0.2.0:
   resolved "https://registry.npm.taobao.org/text-table/download/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
+throttle-debounce@^2.1.0:
+  version "2.3.0"
+  resolved "https://registry.npm.taobao.org/throttle-debounce/download/throttle-debounce-2.3.0.tgz#fd31865e66502071e411817e241465b3e9c372e2"
+  integrity sha1-/TGGXmZQIHHkEYF+JBRls+nDcuI=
+
 through2@^2.0.0:
   version "2.0.5"
   resolved "https://registry.npm.taobao.org/through2/download/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"
@@ -7488,6 +7523,21 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
+vue-codemirror@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.npm.taobao.org/vue-codemirror/download/vue-codemirror-4.0.6.tgz#b786bb80d8d762a93aab8e46f79a81006f0437c4"
+  integrity sha1-t4a7gNjXYqk6q45G95qBAG8EN8Q=
+  dependencies:
+    codemirror "^5.41.0"
+    diff-match-patch "^1.0.0"
+
+vue-element-loading@^1.1.5:
+  version "1.1.6"
+  resolved "https://registry.npm.taobao.org/vue-element-loading/download/vue-element-loading-1.1.6.tgz#50f15a279a914b55e2d54a8d0774881872ed9ff7"
+  integrity sha1-UPFaJ5qRS1Xi1UqNB3SIGHLtn/c=
+  dependencies:
+    vue "^2.5.22"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -7504,10 +7554,29 @@ vue-loader@^15.7.1:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-multipane@^0.9.5:
+  version "0.9.5"
+  resolved "https://registry.npm.taobao.org/vue-multipane/download/vue-multipane-0.9.5.tgz#10ddaf9092e0a9e761edfd0d1f1db8bbb54b3e9c"
+  integrity sha1-EN2vkJLgqedh7f0NHx24u7VLPpw=
+
 vue-router@^3.4.5:
   version "3.5.1"
   resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-3.5.1.tgz#edf3cf4907952d1e0583e079237220c5ff6eb6c9"
   integrity sha1-7fPPSQeVLR4Fg+B5I3Igxf9utsk=
+
+vue-run-sfc@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npm.taobao.org/vue-run-sfc/download/vue-run-sfc-1.6.0.tgz#5cabba2695edbd12a1aa3d9c1fac8760f6abb2fc"
+  integrity sha1-XKu6JpXtvRKhqj2cH6yHYParsvw=
+  dependencies:
+    "@babel/standalone" "^7.9.4"
+    css-vars-ponyfill "^2.2.1"
+    deepmerge "^4.2.2"
+    screenfull "^5.0.2"
+    throttle-debounce "^2.1.0"
+    vue-codemirror "^4.0.6"
+    vue-element-loading "^1.1.5"
+    vue-multipane "^0.9.5"
 
 vue-server-renderer@^2.6.10:
   version "2.6.12"
@@ -7544,7 +7613,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue@^2.6.10:
+vue@^2.5.22, vue@^2.6.10:
   version "2.6.12"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz?cache=0&sync_timestamp=1609359858533&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha1-9evU+mvShpQD4pqJau1JBEVskSM=
@@ -7574,6 +7643,14 @@ vuepress-plugin-container@^2.0.2:
   dependencies:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
+
+vuepress-plugin-run@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-run/download/vuepress-plugin-run-1.0.2.tgz#b6fdb0189cbcd9f0155b56a877b2c4900e7af66f"
+  integrity sha1-tv2wGJy82fAVW1aod7LEkA569m8=
+  dependencies:
+    markdown-it-container "^2.0.0"
+    vue-run-sfc "^1.6.0"
 
 vuepress-plugin-smooth-scroll@^0.0.3:
   version "0.0.3"
