@@ -1,5 +1,3 @@
-var sidebar = require("./router");
-
 module.exports = {
   title: "博客",
   description: "个人随记📒",
@@ -23,13 +21,27 @@ module.exports = {
   markdown: {
     lineNumbers: false,
   },
+  theme: "vuepress-theme-reco",
+  // theme: 'vuepress-theme-antdocs',
   themeConfig: {
+    lastUpdated: "最后更新时间",
+    author: "shiduobin",
+    startYear: "2020",
     nav: [
       { text: "Home", link: "/" },
+      {
+        text: "基本概念",
+        link: "/base/restful",
+      },
       {
         text: "每日•壹题",
         link: "/question/01",
       },
+      {
+        text: "算法",
+        link: "/algorithm/605",
+      },
+
       {
         text: "学习",
         items: [
@@ -39,7 +51,7 @@ module.exports = {
       },
     ],
     displayAllHeaders: true,
-    sidebarDepth: 2,
+    sidebarDepth: 3,
     sidebar: {
       "/study/": [
         {
@@ -66,6 +78,10 @@ module.exports = {
           collapsable: true,
           path: "/question/01",
         },
+      ],
+      "/algorithm/": [
+        { title: "种花问题", path: "/algorithm/605" },
+        { title: "千分位", path: "/algorithm/1556" },
       ],
     },
   },
