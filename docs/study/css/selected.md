@@ -1,11 +1,3 @@
-<!--
- * @Description: CSS选择器
- * @Author: shiduobin
- * @Date: 2021-02-19 20:40:54
- * @LastEditors: shiduobin
- * @LastEditTime: 2021-02-27 14:07:31
--->
-
 # CSS 选择器
 
 ## :last-of-type 选择器
@@ -15,7 +7,9 @@
 :::
 
 #### 实例
+
 指定父元素的最后一个 p 元素的背景色：
+
 ```css
 p:last-of-type {
   background: #299983;
@@ -33,7 +27,9 @@ p:last-of-type {
 :::
 
 #### 实例
+
 指定每个 p 元素匹配同类型中的倒数第 2 个同级兄弟元素背景色：
+
 ```css
 p:nth-last-of-type(2) {
   background: #ff0000;

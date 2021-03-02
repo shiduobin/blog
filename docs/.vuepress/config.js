@@ -1,6 +1,6 @@
 module.exports = {
-  title: "博客",
-  description: "个人随记📒",
+  title: "心之所向",
+  description: "Just Do It",
   head: [
     [
       "link",
@@ -24,9 +24,21 @@ module.exports = {
   theme: "vuepress-theme-reco",
   // theme: 'vuepress-theme-antdocs',
   themeConfig: {
-    lastUpdated: "最后更新时间",
+    type: "blog",
     author: "shiduobin",
+    authorAvatar: "/favicon.ico",
     startYear: "2020",
+    // 博客配置
+    blogConfig: {
+      category: {
+        location: 2, // 在导航栏菜单中所占的位置，默认2
+        text: "Category", // 默认文案 “分类”
+      },
+      tag: {
+        location: 3, // 在导航栏菜单中所占的位置，默认3
+        text: "Tag", // 默认文案 “标签”
+      },
+    },
     nav: [
       { text: "Home", link: "/" },
       {
