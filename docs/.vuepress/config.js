@@ -28,6 +28,7 @@ module.exports = {
     author: "shiduobin",
     authorAvatar: "/favicon.ico",
     startYear: "2020",
+    lastUpdated: "最后更新时间", // string | boolean
     // 博客配置
     blogConfig: {
       category: {
