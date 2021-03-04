@@ -52,7 +52,7 @@ module.exports = {
       },
       {
         text: "算法",
-        link: "/algorithm/605",
+        link: "/algorithm/concept",
       },
 
       {
@@ -93,6 +93,7 @@ module.exports = {
         },
       ],
       "/algorithm/": [
+        { title: "基本概念", path: "/algorithm/concept" },
         { title: "种花问题", path: "/algorithm/605" },
         { title: "千分位", path: "/algorithm/1556" },
       ],
