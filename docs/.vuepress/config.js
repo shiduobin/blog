@@ -9,6 +9,22 @@ module.exports = {
         href: `/favicon.ico`,
       },
     ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css",
+      },
+    ],
   ],
   base: "/blog/",
   dest: "./docs/.vuepress/dist",
@@ -20,6 +36,12 @@ module.exports = {
   },
   markdown: {
     lineNumbers: false,
+    extendMarkdown: (md) => {
+      md.set({
+        html: true,
+      });
+      md.use(require("markdown-it-katex"));
+    },
   },
   theme: "vuepress-theme-reco",
   // theme: 'vuepress-theme-antdocs',
@@ -52,7 +74,7 @@ module.exports = {
       },
       {
         text: "算法",
-        link: "/algorithm/singly_linked_lis",
+        link: "/algorithm/concept",
       },
 
       {
@@ -105,6 +127,7 @@ module.exports = {
           title: "基本概念",
           path: "/algorithm/concept",
         },
+        { title: "两数相加", path: "/algorithm/02" },
         { title: "种花问题", path: "/algorithm/605" },
         { title: "千分位", path: "/algorithm/1556" },
       ],
