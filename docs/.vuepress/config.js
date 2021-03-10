@@ -28,16 +28,16 @@ module.exports = {
     author: "shiduobin",
     authorAvatar: "/favicon.ico",
     startYear: "2020",
-    lastUpdated: "最后更新时间", // string | boolean
+    lastUpdated: "最后更新时间",
     // 博客配置
     blogConfig: {
       category: {
-        location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: "Category", // 默认文案 “分类”
+        location: 1, // 在导航栏菜单中所占的位置，默认2
+        text: "Category",
       },
       tag: {
-        location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: "Tag", // 默认文案 “标签”
+        location: 2,
+        text: "Tag",
       },
     },
     nav: [
@@ -52,7 +52,7 @@ module.exports = {
       },
       {
         text: "算法",
-        link: "/algorithm/concept",
+        link: "/algorithm/singly_linked_lis",
       },
 
       {
@@ -63,9 +63,17 @@ module.exports = {
         ],
       },
     ],
-    displayAllHeaders: true,
-    sidebarDepth: 3,
+    subSidebar: "auto",
+    displayAllHeaders: false,
+    sidebarDepth: 2,
     sidebar: {
+      "/foo/": [
+        {
+          title: "Group 1", // 必要的
+          path: "/foo/", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          sidebarDepth: 2, // 可选的, 默认值是 1
+        },
+      ],
       "/study/": [
         {
           title: "JS",
@@ -93,7 +101,10 @@ module.exports = {
         },
       ],
       "/algorithm/": [
-        { title: "基本概念", path: "/algorithm/concept" },
+        {
+          title: "基本概念",
+          path: "/algorithm/concept",
+        },
         { title: "种花问题", path: "/algorithm/605" },
         { title: "千分位", path: "/algorithm/1556" },
       ],
