@@ -51,6 +51,7 @@ module.exports = {
     authorAvatar: "/favicon.ico",
     startYear: "2020",
     lastUpdated: "最后更新时间",
+    codeTheme: "funky",
     // 博客配置
     blogConfig: {
       category: {
