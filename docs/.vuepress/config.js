@@ -113,7 +113,10 @@ module.exports = {
         {
           title: "CSS",
           collapsable: true,
-          children: [{ title: "选择器", path: "/study/css/selected" }],
+          children: [
+            { title: "选择器", path: "/study/css/selected" },
+            { title: "BEM", path: "/study/css/bem" },
+          ],
         },
       ],
       "/question/": [
@@ -131,6 +134,7 @@ module.exports = {
         { title: "两数相加", path: "/algorithm/02" },
         { title: "种花问题", path: "/algorithm/605" },
         { title: "千分位", path: "/algorithm/1556" },
+        { title: "无重复字符的最长子串", path: "/algorithm/03" },
       ],
     },
   },
