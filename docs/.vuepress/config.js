@@ -88,13 +88,12 @@ module.exports = {
     ],
     subSidebar: "auto",
     displayAllHeaders: false,
-    sidebarDepth: 2,
+    // sidebarDepth: 3,
     sidebar: {
-      "/foo/": [
+      "/base/": [
         {
-          title: "Group 1", // 必要的
-          path: "/foo/", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          sidebarDepth: 2, // 可选的, 默认值是 1
+          title: "RESTful架构",
+          path: "/base/restful",
         },
       ],
       "/study/": [
@@ -116,6 +115,7 @@ module.exports = {
           children: [
             { title: "选择器", path: "/study/css/selected" },
             { title: "BEM", path: "/study/css/bem" },
+            { title: "REM", path: "/study/css/rem" },
           ],
         },
       ],
@@ -128,7 +128,7 @@ module.exports = {
       ],
       "/algorithm/": [
         {
-          title: "基本概念",
+          title: "名词解释",
           path: "/algorithm/concept",
         },
         { title: "两数相加", path: "/algorithm/02" },
