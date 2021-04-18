@@ -116,6 +116,7 @@ module.exports = {
             { title: "选择器", path: "/study/css/selected" },
             { title: "BEM", path: "/study/css/bem" },
             { title: "REM", path: "/study/css/rem" },
+            { title: "重绘&回流", path: "/study/css/Repaint&Reflow" },
           ],
         },
       ],
