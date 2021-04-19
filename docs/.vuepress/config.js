@@ -88,7 +88,7 @@ module.exports = {
     ],
     subSidebar: "auto",
     displayAllHeaders: false,
-    // sidebarDepth: 3,
+    sidebarDepth: 2,
     sidebar: {
       "/base/": [
         {
@@ -107,6 +107,7 @@ module.exports = {
             },
             { title: "reduce", path: "/study/js/reduce" },
             { title: "this", path: "/study/js/this" },
+            { title: "事件总线", path: "/study/js/eventbus" },
           ],
         },
         {
