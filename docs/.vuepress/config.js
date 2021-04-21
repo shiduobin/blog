@@ -44,14 +44,12 @@ module.exports = {
     },
   },
   theme: "vuepress-theme-reco",
-  // theme: 'vuepress-theme-antdocs',
   themeConfig: {
     type: "blog",
     author: "shiduobin",
     authorAvatar: "/favicon.ico",
     startYear: "2020",
-    lastUpdated: "最后更新时间",
-    codeTheme: "funky",
+    // lastUpdated: "最后更新时间",
     // 博客配置
     blogConfig: {
       category: {
@@ -117,6 +115,7 @@ module.exports = {
             { title: "选择器", path: "/study/css/selected" },
             { title: "BEM", path: "/study/css/bem" },
             { title: "REM", path: "/study/css/rem" },
+            { title: "BFC", path: "/study/css/bfc" },
             { title: "重绘&回流", path: "/study/css/Repaint&Reflow" },
           ],
         },
