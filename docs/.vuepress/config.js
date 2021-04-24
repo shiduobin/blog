@@ -29,10 +29,14 @@ module.exports = {
   base: "/blog/",
   dest: "./docs/.vuepress/dist",
   plugins: {
+    // 添加复制代码按钮
     "vuepress-plugin-code-copy": false,
+    // 在线运行 Vue 单文件
     run: {
       height: "auto",
     },
+    // 切换页面的时候，在顶部显示进度条
+    "vuepress-plugin-nprogress": true,
   },
   markdown: {
     lineNumbers: false,
@@ -49,15 +53,15 @@ module.exports = {
     author: "shiduobin",
     authorAvatar: "/favicon.ico",
     startYear: "2020",
-    // lastUpdated: "最后更新时间",
+    lastUpdated: "Last Updated", // string | boolean
     // 博客配置
     blogConfig: {
       category: {
-        location: 1, // 在导航栏菜单中所占的位置，默认2
+        location: 7, // 在导航栏菜单中所占的位置
         text: "Category",
       },
       tag: {
-        location: 2,
+        location: 6,
         text: "Tag",
       },
     },
@@ -75,7 +79,6 @@ module.exports = {
         text: "算法",
         link: "/algorithm/concept",
       },
-
       {
         text: "学习",
         items: [

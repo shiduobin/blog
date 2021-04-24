@@ -7556,6 +7556,13 @@ vuepress-plugin-mailchimp@^1.4.1:
     jsonp "^0.2.1"
     query-string "^6.9.0"
 
+vuepress-plugin-nprogress@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.nlark.com/vuepress-plugin-nprogress/download/vuepress-plugin-nprogress-1.1.8.tgz#92ee0002f0edd519542e0048481cb01f16e89e3c"
+  integrity sha1-ku4AAvDt1RlULgBISBywHxbonjw=
+  dependencies:
+    nprogress "^0.2.0"
+
 vuepress-plugin-run@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/vuepress-plugin-run/download/vuepress-plugin-run-1.0.2.tgz#b6fdb0189cbcd9f0155b56a877b2c4900e7af66f"

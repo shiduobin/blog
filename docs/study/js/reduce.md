@@ -3,7 +3,7 @@
  * @Author: shiduobin
  * @Date: 2021-01-30 11:13:44
  * @LastEditors: shiduobin
- * @LastEditTime: 2021-02-27 10:46:41
+ * @LastEditTime: 2021-04-24 19:02:25
 -->
 
 # Array.prototype.reduce()
@@ -21,7 +21,7 @@
 
 ```js
 Array.prototype.reduce = function(callback, initialValue) {
-  if (Array.isArray(this) || !this.length || typeof callback !== "function") {
+  if (!Array.isArray(this) || !this.length || typeof callback !== "function") {
     return [];
   }
   const hasInitialValue = initialValue !== undefined;
