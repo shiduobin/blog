@@ -1,14 +1,8 @@
-<!--
- * @Description:
- * @Author: shiduobin
- * @Date: 2021-01-30 11:13:44
- * @LastEditors: shiduobin
- * @LastEditTime: 2021-04-24 19:02:25
--->
+---
+title: Array.prototype.reduce()
+---
 
-# Array.prototype.reduce()
-
-# 描述
+## 描述
 
 `reduce`为数组中的每一个元素依次执行`callback`函数，不包括数组中被删除或从未被赋值的元素，接受四个参数：
 
@@ -18,6 +12,8 @@
 - `array 数组`
 
 回调函数第一次执行时，`accumulator`和`currentValue`的取值有两种情况：如果调用`reduce()`时提供了 `initialValue`，`accumulator` 取值为 `initialValue`，`currentValue` 取数组中的第一个值；如果没有提供 `initialValue`，那么 `accumulator` 取数组中的第一个值，`currentValue` 取数组中的第二个值。
+
+## 代码实现
 
 ```js
 Array.prototype.reduce = function(callback, initialValue) {

@@ -1,19 +1,11 @@
-<!--
- * @Description: Promise知识点
- * @Author: shiduobin
- * @Date: 2021-01-30 11:13:44
- * @LastEditors: shiduobin
- * @LastEditTime: 2021-02-01 20:43:21
--->
-
-# Promise 源码实现
+---
+title: Promise 源码实现
+---
 
 ## 为何使用 Promis
 
-:::tip
-1、解决回调地狱的问题<br/>
-2、支持链式调用
-:::
+1. 解决回调地狱的问题
+2. 支持链式调用
 
 ## Promise.all()
 

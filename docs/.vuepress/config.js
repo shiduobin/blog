@@ -37,6 +37,8 @@ module.exports = {
     },
     // 切换页面的时候，在顶部显示进度条
     "vuepress-plugin-nprogress": true,
+    // 自动生成侧边栏
+    autobar: false,
   },
   markdown: {
     lineNumbers: false,
@@ -107,6 +109,7 @@ module.exports = {
               path: "/study/js/promise",
             },
             { title: "reduce", path: "/study/js/reduce" },
+            { title: "repeat", path: "/study/js/repeat" },
             { title: "this", path: "/study/js/this" },
             { title: "事件总线", path: "/study/js/eventbus" },
           ],

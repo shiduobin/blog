@@ -1,0 +1,3 @@
+---
+title: String.prototype.repeat()
+---

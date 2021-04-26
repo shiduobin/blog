@@ -1,11 +1,3 @@
-<!--
- * @Description: this指向问题
- * @Author: shiduobin
- * @Date: 2021-01-30 11:13:44
- * @LastEditors: shiduobin
- * @LastEditTime: 2021-02-04 09:52:59
--->
-
 # This 指向问题
 
 ## 实现一个 bind 方法
