@@ -1,6 +1,6 @@
 module.exports = {
-  title: "心之所向",
-  description: "Just Do It",
+  title: "心之所向，素履以往",
+  description: "生如逆旅，一苇以航",
   head: [
     [
       "link",
