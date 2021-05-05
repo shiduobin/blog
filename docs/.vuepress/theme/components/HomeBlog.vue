@@ -1,6 +1,7 @@
 <template>
   <div class="home-blog">
     <div ref="heroRef" class="hero" :style="{ ...bgImageStyle }">
+      <bubbles-effect :options="options"></bubbles-effect>
       <div>
         <ModuleTransition>
           <img
@@ -100,6 +101,7 @@ import pagination from "@theme/mixins/pagination";
 import { ModuleTransition, RecoIcon } from "@vuepress-reco/core/lib/components";
 import PersonalInfo from "@theme/components/PersonalInfo";
 import { getOneColor } from "@theme/helpers/other";
+import vueCanvas from "vue-canvas-effect";
 
 export default {
   mixins: [pagination],
@@ -110,12 +112,19 @@ export default {
     ModuleTransition,
     PersonalInfo,
     RecoIcon,
+    [vueCanvas.Bubbles.name]: vueCanvas.Bubbles,
   },
   data() {
     return {
       recoShow: false,
       currentPage: 1,
       tags: [],
+      options: {
+        color: "rgba(225,225,225,0.5)", //气泡颜色
+        radius: 15, //气泡半径
+        densety: 0.3, // 气泡密度 越大越密集(建议不要大于1)
+        clearOffset: 0.2, // 气泡消失距离[0-1] 越大越晚消失
+      },
     };
   },
   computed: {
@@ -159,6 +168,9 @@ export default {
     },
   },
   mounted() {
+    console.log("====================================");
+    console.log(vueCanvas);
+    console.log("====================================");
     this.recoShow = true;
     this._setPage(this._getStoragePage());
   },

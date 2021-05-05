@@ -39,6 +39,8 @@ module.exports = {
     "vuepress-plugin-nprogress": true,
     // 自动生成侧边栏
     autobar: false,
+    // 功能代码展示插件，展示多种语言于一窗，增加易读性
+    "@vuepress-reco/extract-code": true,
   },
   markdown: {
     lineNumbers: false,
@@ -58,35 +60,39 @@ module.exports = {
     lastUpdated: "Last Updated", // string | boolean
     // 博客配置
     blogConfig: {
-      category: {
-        location: 7, // 在导航栏菜单中所占的位置
-        text: "Category",
-      },
       tag: {
-        location: 6,
+        location: 7,
         text: "Tag",
+      },
+      category: {
+        location: 8, // 在导航栏菜单中所占的位置
+        text: "Category",
       },
     },
     nav: [
       { text: "Home", link: "/" },
-      {
-        text: "基本概念",
-        link: "/base/restful",
-      },
-      {
-        text: "每日•壹题",
-        link: "/question/01",
-      },
-      {
-        text: "算法",
-        link: "/algorithm/concept",
-      },
+      // {
+      //   text: "每日•壹题",
+      //   link: "/question/01",
+      // },
       {
         text: "学习",
         items: [
           { text: "JS基础", link: "/study/js/promise" },
           { text: "CSS基础", link: "/study/css/selected" },
         ],
+      },
+      {
+        text: "算法",
+        link: "/algorithm/concept",
+      },
+      {
+        text: "基本概念",
+        link: "/base/restful",
+      },
+      {
+        text: "随记",
+        link: "/notes/contentLength",
       },
     ],
     subSidebar: "auto",
@@ -142,6 +148,16 @@ module.exports = {
         { title: "种花问题", path: "/algorithm/605" },
         { title: "千分位", path: "/algorithm/1556" },
         { title: "无重复字符的最长子串", path: "/algorithm/03" },
+      ],
+      "/notes": [
+        {
+          title: "Content-Length",
+          path: "/notes/contentLength",
+        },
+        {
+          title: "transition & animation",
+          path: "/notes/tran",
+        },
       ],
     },
   },
