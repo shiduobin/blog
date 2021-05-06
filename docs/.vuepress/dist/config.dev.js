@@ -25,7 +25,9 @@ module.exports = {
     // 切换页面的时候，在顶部显示进度条
     "vuepress-plugin-nprogress": true,
     // 自动生成侧边栏
-    autobar: false
+    autobar: false,
+    // 功能代码展示插件，展示多种语言于一窗，增加易读性
+    "@vuepress-reco/extract-code": true
   },
   markdown: {
     lineNumbers: false,
@@ -46,29 +48,24 @@ module.exports = {
     // string | boolean
     // 博客配置
     blogConfig: {
-      category: {
+      tag: {
         location: 7,
+        text: "Tag"
+      },
+      category: {
+        location: 8,
         // 在导航栏菜单中所占的位置
         text: "Category"
-      },
-      tag: {
-        location: 6,
-        text: "Tag"
       }
     },
     nav: [{
       text: "Home",
       link: "/"
-    }, {
-      text: "基本概念",
-      link: "/base/restful"
-    }, {
-      text: "每日•壹题",
-      link: "/question/01"
-    }, {
-      text: "算法",
-      link: "/algorithm/concept"
-    }, {
+    }, // {
+    //   text: "每日•壹题",
+    //   link: "/question/01",
+    // },
+    {
       text: "学习",
       items: [{
         text: "JS基础",
@@ -77,6 +74,15 @@ module.exports = {
         text: "CSS基础",
         link: "/study/css/selected"
       }]
+    }, {
+      text: "算法",
+      link: "/algorithm/concept"
+    }, {
+      text: "基本概念",
+      link: "/base/restful"
+    }, {
+      text: "随记",
+      link: "/notes/contentLength"
     }],
     subSidebar: "auto",
     displayAllHeaders: false,
@@ -145,6 +151,17 @@ module.exports = {
       }, {
         title: "无重复字符的最长子串",
         path: "/algorithm/03"
+      }],
+      "/notes/": [{
+        title: "Content-Length",
+        path: "/notes/contentLength"
+      }, {
+        title: "transition & animation",
+        path: "/notes/tran"
+      }],
+      "/vue/": [{
+        title: "路由懒加载",
+        path: "/vue/lazyRouter"
       }]
     }
   }

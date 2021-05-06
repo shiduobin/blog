@@ -149,7 +149,7 @@ module.exports = {
         { title: "千分位", path: "/algorithm/1556" },
         { title: "无重复字符的最长子串", path: "/algorithm/03" },
       ],
-      "/notes": [
+      "/notes/": [
         {
           title: "Content-Length",
           path: "/notes/contentLength",
@@ -157,6 +157,12 @@ module.exports = {
         {
           title: "transition & animation",
           path: "/notes/tran",
+        },
+      ],
+      "/vue/": [
+        {
+          title: "路由懒加载",
+          path: "/vue/lazyRouter",
         },
       ],
     },
