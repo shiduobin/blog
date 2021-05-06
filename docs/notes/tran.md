@@ -4,6 +4,7 @@ categories:
   - CSS
 tags:
   - 随记
+img: https://jc.chazidian.com/Images/jiaocheng/2015-05-0713/1176873911.jpg
 ---
 
 transition 和 animition 都是 CSS3 的新特性，我们可以使用这两个特性做出一些动画效果，他们的大部分功能是重叠的，但也存在着许多不同点，接下来让我们了解一下这两个特性以及他们的使用方法。

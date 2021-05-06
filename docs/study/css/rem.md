@@ -2,6 +2,7 @@
 title: Web App 适配方案 REM
 categories:
   - CSS
+img: http://cc.cocimg.com/api/uploads/20150902/1441166309739767.jpg
 ---
 
 ## 什么是 REM

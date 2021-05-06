@@ -4,6 +4,7 @@ categories:
   - 架构
 tags:
   - 架构
+img: https://pic.rmb.bdstatic.com/26b9081e7212ee09d66276eef11b9f6c.png
 ---
 
 # RESTful

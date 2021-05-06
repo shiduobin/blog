@@ -2,6 +2,7 @@
 title: CSS命名规范—BEM
 categories:
   - CSS
+img: https://jc.chazidian.com/Images/jiaocheng/2015-05-0713/1176873911.jpg
 ---
 
 ## 什么是 BEM

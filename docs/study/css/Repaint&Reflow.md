@@ -2,6 +2,7 @@
 title: 浏览器重绘（Repaint）和回流（Reflow）
 categories:
   - CSS
+img: https://jc.chazidian.com/Images/jiaocheng/2015-05-0713/1176873911.jpg
 ---
 
 ## 什么是重绘

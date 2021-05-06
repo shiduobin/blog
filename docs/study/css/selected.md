@@ -2,6 +2,7 @@
 title: CSS 选择器
 categories:
   - CSS
+img: http://cc.cocimg.com/api/uploads/20150902/1441166309739767.jpg
 ---
 
 ## :last-of-type 选择器

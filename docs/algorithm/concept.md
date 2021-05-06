@@ -8,6 +8,7 @@ tags:
   - 堆
   - 栈
   - 队列
+img: https://pic.rmb.bdstatic.com/5da751880d6acc39c36604bcb09da63f.jpeg
 ---
 
 # 链表

@@ -4,6 +4,7 @@ categories:
   - HTTP
 tags:
   - 随记
+img: https://pic1.zhimg.com/v2-c0b0cbf72a000259d1a49b83ef6fabc9_1440w.jpg?source=172ae18b
 ---
 
 ## 什么是 Content-Length
