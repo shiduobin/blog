@@ -16,8 +16,13 @@ title: 事件总线
 class EventBus {
   constructor() {
     // 存储所有的事件
-    this._events = [];
+    this._events = Object.create(null);
   }
+  /**
+   * @description 监听事件
+   * @param {String|Array<string>} event 事件名称
+   * @param {Function} fn 回调事件
+   */
   on(event, fn) {
     // 如果事件是个数据
     if (Array.isArray(event)) {
@@ -29,22 +34,30 @@ class EventBus {
       (this._events[event] || (this._events[event] = [])).push(fn);
     }
   }
+  /**
+   * @description 移除事件
+   * @param {String|Array<string>} event 事件名称
+   * @param {Function} fn 回调函数
+   */
   off(event, fn) {
-    // 如果没有参数销毁所有事件
+    // 如果没有传参数，则清空所有事件的监听函数
     if (!arguments.length) {
-      this._events = [];
+      this._events = Object.create(null);
+      return;
     }
     // 如果事件是数组循环销毁
     if (Array.isArray(event)) {
       for (let i = 0; i < event.length; i++) {
         this.off(event[i], fn);
       }
+      return;
     }
     let cbs = this._events[event];
     if (!cbs) return;
-    // 如果只传入事件名称，清除所有监听函数
-    if (arguments.length === 1) {
+    // 如果没有指定要移除的回调函数，则移除该事件下所有的回调函数
+    if (!fn) {
       this._events[event] = null;
+      return;
     }
     let cb,
       i = cbs.length;
@@ -57,6 +70,11 @@ class EventBus {
       }
     }
   }
+  /**
+   * @description 监听一个自定义事件，但是只触发一次。一旦触发之后，监听器就会被移除
+   * @param {String} event 事件名称
+   * @param {Function} fn 回调函数
+   */
   once(event, fn) {
     let _this = this;
     // 封装一个高阶函数on，最终在on函数中调用fn
@@ -75,6 +93,11 @@ class EventBus {
     on.fn = fn;
     this.on(event, on);
   }
+
+  /**
+   * @description 派发事件
+   * @param {String} event 事件名称
+   */
   emit(event) {
     let cbs = this._events[event];
     if (cbs) {
