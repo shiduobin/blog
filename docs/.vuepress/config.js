@@ -159,12 +159,6 @@ module.exports = {
           path: "/notes/tran",
         },
       ],
-      "/vue/": [
-        {
-          title: "路由懒加载",
-          path: "/vue/lazyRouter",
-        },
-      ],
     },
   },
 };
