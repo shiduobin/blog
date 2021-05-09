@@ -71,10 +71,6 @@ module.exports = {
     },
     nav: [
       { text: "Home", link: "/" },
-      // {
-      //   text: "每日•壹题",
-      //   link: "/question/01",
-      // },
       {
         text: "学习",
         items: [
@@ -105,10 +101,10 @@ module.exports = {
           path: "/base/restful",
         },
       ],
-      "/study/": [
+      "/study/js/": [
         {
           title: "JS",
-          collapsable: true,
+          collapsable: false,
           children: [
             {
               title: "promise",
@@ -120,15 +116,18 @@ module.exports = {
             { title: "事件总线", path: "/study/js/eventbus" },
           ],
         },
+      ],
+      "/study/css/": [
         {
           title: "CSS",
-          collapsable: true,
+          collapsable: false,
           children: [
             { title: "选择器", path: "/study/css/selected" },
             { title: "BEM", path: "/study/css/bem" },
             { title: "REM", path: "/study/css/rem" },
             { title: "BFC", path: "/study/css/bfc" },
             { title: "重绘&回流", path: "/study/css/Repaint&Reflow" },
+            { title: "垂直居中", path: "/study/css/verticalCenter" },
           ],
         },
       ],
