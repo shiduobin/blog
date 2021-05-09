@@ -69,38 +69,11 @@ module.exports = {
         text: "Category",
       },
     },
-    nav: [
-      { text: "Home", link: "/" },
-      {
-        text: "学习",
-        items: [
-          { text: "JS基础", link: "/study/js/promise" },
-          { text: "CSS基础", link: "/study/css/selected" },
-        ],
-      },
-      {
-        text: "算法",
-        link: "/algorithm/concept",
-      },
-      {
-        text: "基本概念",
-        link: "/base/restful",
-      },
-      {
-        text: "随记",
-        link: "/notes/contentLength",
-      },
-    ],
+    nav: [{ text: "Home", link: "/" }],
     subSidebar: "auto",
     displayAllHeaders: false,
     sidebarDepth: 2,
     sidebar: {
-      "/base/": [
-        {
-          title: "RESTful架构",
-          path: "/base/restful",
-        },
-      ],
       "/study/js/": [
         {
           title: "JS",
@@ -131,13 +104,6 @@ module.exports = {
           ],
         },
       ],
-      "/question/": [
-        {
-          title: "第一题",
-          collapsable: true,
-          path: "/question/01",
-        },
-      ],
       "/algorithm/": [
         {
           title: "名词解释",
@@ -147,16 +113,6 @@ module.exports = {
         { title: "种花问题", path: "/algorithm/605" },
         { title: "千分位", path: "/algorithm/1556" },
         { title: "无重复字符的最长子串", path: "/algorithm/03" },
-      ],
-      "/notes/": [
-        {
-          title: "Content-Length",
-          path: "/notes/contentLength",
-        },
-        {
-          title: "transition & animation",
-          path: "/notes/tran",
-        },
       ],
     },
   },
