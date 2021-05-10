@@ -261,6 +261,10 @@ function flatten (items, res) {
     margin: 0 auto;
     padding: 1rem 2.5rem;
     color var(--text-color)
+  .theme-reco-content h1
+    padding-bottom: 12px;
+    font-size: 24px;
+    border-bottom 1px solid #ececec;
   .theme-reco-content h2
     position relative
     padding-left 0.8rem

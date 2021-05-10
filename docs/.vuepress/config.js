@@ -104,15 +104,31 @@ module.exports = {
           ],
         },
       ],
+      "/vue/": [
+        {
+          title: "Vue",
+          collapsable: false,
+          children: [
+            { title: "组件间数据通信", path: "/vue/communication" },
+            { title: "路由懒加载", path: "/vue/lazyRouter" },
+          ],
+        },
+      ],
       "/algorithm/": [
         {
-          title: "名词解释",
-          path: "/algorithm/concept",
+          title: "算法",
+          collapsable: false,
+          children: [
+            {
+              title: "名词解释",
+              path: "/algorithm/concept",
+            },
+            { title: "两数相加", path: "/algorithm/02" },
+            { title: "种花问题", path: "/algorithm/605" },
+            { title: "千分位", path: "/algorithm/1556" },
+            { title: "无重复字符的最长子串", path: "/algorithm/03" },
+          ],
         },
-        { title: "两数相加", path: "/algorithm/02" },
-        { title: "种花问题", path: "/algorithm/605" },
-        { title: "千分位", path: "/algorithm/1556" },
-        { title: "无重复字符的最长子串", path: "/algorithm/03" },
       ],
     },
   },
