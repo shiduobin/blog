@@ -4,9 +4,9 @@
     @click="$router.push(item.path)"
     :class="index % 2 == 0 ? 'draw' : 'draw meet'"
   >
-    <div class="img-cover draw">
+    <!-- <div class="img-cover draw">
       <img :src="item.frontmatter.img || '/img/blog_img.jpg'" />
-    </div>
+    </div> -->
     <div class="text">
       <reco-icon v-if="item.frontmatter.sticky" icon="reco-sticky" />
       <div class="title">

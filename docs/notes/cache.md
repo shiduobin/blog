@@ -64,3 +64,21 @@ Cache-Control 这个首部是可选的, 并且可以用于请求以及响应时�
 #### Last-Modified/If-Modified-Since
 
 当浏览器第一次请求的响应头包含了 `Last-Modified` 标识（资源文件最后一次更改时间时）时，后续当浏览器再次请求该资源时，请求头会添加 `If-Modified-Since`，该值为缓存之前返回的 `Last-Modified` 的值。服务器收到 `If-Modify-Since` 后，根据资源的最后修改时间判断是否命中缓存。
+如果命中缓存，则会返回 `304` ，并且不会返回资源内容，而且不会返回 `Last-Modified`。
+
+#### ETag/If-None-Match
+
+`Etag` 是 服务器返回的一个校验码，`ETag` 可以保证每一个资源是唯一的，资源变化都会导致 `ETag` 变化。当响应头包含 `Etag` 字段时，后续的请求头会添加 `If-None-Match`，值为之前返回的 `Eta`g 的值。服务器根据浏览器上送的 `If-None-Match` 值来判断是否命中缓存。
+与 `Last-Modified` 不一样的是，当服务器返回 `304 Not Modified` 的响应时，由于 `ETag` 重新生成过，请求头中还会把这个 `ETag` 返回，即使这个 `ETag` 跟之前的没有变化。
+
+:::tip
+当 `Last-Modified` 和 `Etag` 同时存在时，服务器会优先验证 `Etag`，一致的情况下会继续比对 `Last-Modified`，然后决定是否返回`304`
+:::
+
+# 总结
+
+当浏览器再次访问同一个资源时，会走如下的流程：  
+1、 根据 `Expires` 或 `Cache-Control` 判断是否命中强缓存，命中则直接使用缓存；  
+2、 如果没有命中则携带 `If-Modified-Since` 或 `If-None-Match` 标识发送请求到服务端，确认是否命中协商缓存；  
+3、 如果命中协商缓存，服务器会返回 `304` 告诉浏览器使用本地缓存；  
+4、 否则，浏览器返回正常状态码 `200` 的响应以及响应体，同时可以附带上新的缓存指令，浏览器缓存新的内容；
