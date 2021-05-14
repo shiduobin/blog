@@ -19,3 +19,9 @@ BFC（Block Formatting Context）块级格式化上下文，是 Web 页面中盒
 
 - 内部的 box 会在垂直方向一个接一个放置
 - box 在垂直方向上的距离由 margin 决定
+
+* https://www.cnblogs.com/yuer20180726/p/11395982.html
+* https://www.jianshu.com/p/828023418450
+* https://zhuanlan.zhihu.com/p/127187654
+* https://www.cnblogs.com/chen-cong/p/7862832.html
+* https://blog.csdn.net/sinat_36422236/article/details/88763187
