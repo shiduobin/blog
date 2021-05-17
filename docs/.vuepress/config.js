@@ -111,6 +111,7 @@ module.exports = {
           children: [
             { title: "组件间数据通信", path: "/vue/communication" },
             { title: "路由懒加载", path: "/vue/lazyRouter" },
+            { title: "Key 的作用", path: "/vue/key" },
           ],
         },
       ],

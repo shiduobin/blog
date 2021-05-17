@@ -12,7 +12,7 @@ img: https://jc.chazidian.com/Images/jiaocheng/2015-05-0713/1176873911.jpg
 #### 会引起重绘的属性
 
 | 引起重绘的属性  |                  |                    |                   |
-| --------------- | ---------------- | ------------------ | ----------------- |
+| :--------------- | ---------------- | ------------------ | ----------------- |
 | color           | border-color     | visibility         | background        |
 | text-decoration | background-image | background-positon | background-repeat |
 | outline         | outline-color    | outline-style      | outline-width     |
@@ -27,12 +27,12 @@ img: https://jc.chazidian.com/Images/jiaocheng/2015-05-0713/1176873911.jpg
 #### 会引起回流的操作、属性以及方法
 
 | 引起回流的操作 |                      |                    |                                              |
-| -------------- | -------------------- | ------------------ | -------------------------------------------- |
+| :-------------- | -------------------- | ------------------ | -------------------------------------------- |
 | 页面首次渲染   | 元素字体大小改变     | 浏览器窗口发生改变 | 元素的尺寸发生改变(内外边距、边框大小、宽高) |
 | 内容改变       | 添加或删除可见的 DOM | 激活伪类           |                                              |
 
 | 引起回流的属性        |                 |              |                       |
-| --------------------- | --------------- | ------------ | --------------------- |
+| :--------------------- | --------------- | ------------ | --------------------- |
 | width                 | height          | padding      | margin                |
 | diaplay               | font-size       | font-weight  | border                |
 | line-height           | vertical-aligin | white-space  | overflow              |
@@ -42,7 +42,7 @@ img: https://jc.chazidian.com/Images/jiaocheng/2015-05-0713/1176873911.jpg
 | scrollHeight          | scrollTop       |              |                       |
 
 | 引起回流的方法           |                        |                  |                       |          |
-| ------------------------ | ---------------------- | ---------------- | --------------------- | -------- |
+| :------------------------ | ---------------------- | ---------------- | --------------------- | -------- |
 | scrollLeftscrollIntoView | scrollIntoViewIfNeeded | getComputedStyle | getBoundingClientRect | scrollTo |
 
 ## 如何减少重绘(Repaint)和回流(Reflow)
