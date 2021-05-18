@@ -50,7 +50,7 @@ Promise.all = (promises) => {
 :::
 
 ```js
-Promise.rece = (promises) => {
+Promise.race = (promises) => {
   return new Promise((resolve, reject) => {
     for (let index = 0; index < promises.length; index++) {
       const promise = promises[index];
@@ -89,7 +89,7 @@ Promise.allSettled = (promises) => {
         })
         .catch((err) => {
           result[index] = {
-            status: "fulfilled",
+            status: "rejected",
             reason: err,
           };
         })
