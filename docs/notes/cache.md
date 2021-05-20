@@ -59,16 +59,16 @@ Cache-Control 这个首部是可选的, 并且可以用于请求以及响应时�
 
 ### 协商缓存
 
-当强缓存没有命中时，此时浏览器会携带一个缓存标识向服务器发起请求，由服务器根据缓存标识决定是否使用缓存。这里的请求标识是指 `Last-Modified/If-Modified-Since`e 和 `ETag/If-None-Match`。
+当强缓存没有命中时，此时浏览器会携带一个缓存标识向服务器发起请求，由服务器根据缓存标识决定是否使用缓存。这里的请求标识是指 `Last-Modified/If-Modified-Since` 和 `ETag/If-None-Match`。
 
 #### Last-Modified/If-Modified-Since
 
-当浏览器第一次请求的响应头包含了 `Last-Modified` 标识（资源文件最后一次更改时间时）时，后续当浏览器再次请求该资源时，请求头会添加 `If-Modified-Since`，该值为缓存之前返回的 `Last-Modified` 的值。服务器收到 `If-Modify-Since` 后，根据资源的最后修改时间判断是否命中缓存。
+当浏览器第一次请求的响应头包含了 `Last-Modified` 标识（资源文件最后一次更改时间）时，后续当浏览器再次请求该资源时，请求头会添加 `If-Modified-Since`，该值为缓存之前返回的 `Last-Modified` 的值。服务器收到 `If-Modify-Since` 后，根据资源的最后修改时间判断是否命中缓存。
 如果命中缓存，则会返回 `304` ，并且不会返回资源内容，而且不会返回 `Last-Modified`。
 
 #### ETag/If-None-Match
 
-`Etag` 是 服务器返回的一个校验码，`ETag` 可以保证每一个资源是唯一的，资源变化都会导致 `ETag` 变化。当响应头包含 `Etag` 字段时，后续的请求头会添加 `If-None-Match`，值为之前返回的 `Eta`g 的值。服务器根据浏览器上送的 `If-None-Match` 值来判断是否命中缓存。
+`Etag` 是 服务器返回的一个校验码，`ETag` 可以保证每一个资源是唯一的，资源变化都会导致 `ETag` 变化。当响应头包含 `Etag` 字段时，后续的请求头会添加 `If-None-Match`，值为之前返回的 `Etag` 的值。服务器根据浏览器上送的 `If-None-Match` 值来判断是否命中缓存。
 与 `Last-Modified` 不一样的是，当服务器返回 `304 Not Modified` 的响应时，由于 `ETag` 重新生成过，请求头中还会把这个 `ETag` 返回，即使这个 `ETag` 跟之前的没有变化。
 
 :::tip
