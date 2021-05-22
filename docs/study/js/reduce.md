@@ -1,5 +1,7 @@
 ---
 title: Array.prototype.reduce()
+categories:
+  - JS
 ---
 
 ## 描述

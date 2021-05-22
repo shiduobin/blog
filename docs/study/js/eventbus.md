@@ -1,5 +1,7 @@
 ---
 title: 事件总线
+categories:
+  - JS
 ---
 
 # 什么是事件总线（Eventbus）

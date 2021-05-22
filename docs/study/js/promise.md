@@ -1,5 +1,7 @@
 ---
 title: Promise 源码实现
+categories:
+  - JS
 ---
 
 ## 为何使用 Promis
