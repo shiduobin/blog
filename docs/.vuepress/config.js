@@ -35,6 +35,7 @@ module.exports = {
     run: {
       height: "auto",
     },
+    "demo-code": true,
     // 切换页面的时候，在顶部显示进度条
     "vuepress-plugin-nprogress": true,
     // 自动生成侧边栏
