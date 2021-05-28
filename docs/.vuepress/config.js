@@ -44,7 +44,7 @@ module.exports = {
     "@vuepress-reco/extract-code": true,
   },
   markdown: {
-    lineNumbers: false,
+    lineNumbers: true,
     extendMarkdown: (md) => {
       md.set({
         html: true,
@@ -58,7 +58,7 @@ module.exports = {
     author: "shiduobin",
     authorAvatar: "/favicon.ico",
     startYear: "2020",
-    lastUpdated: "Last Updated", // string | boolean
+    lastUpdated: false, // string | boolean
     // 博客配置
     blogConfig: {
       tag: {

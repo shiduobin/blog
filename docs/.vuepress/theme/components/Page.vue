@@ -265,11 +265,12 @@ function flatten (items, res) {
     &::before
       position absolute
       left 0
-      top 3.5rem
+      top 3.6rem
       display block
       height 1.8rem
       content ''
       border-left 5px solid $accentColor
+      border-radius 1rem
   .page-edit
     @extend $wrapper
     padding-top 1rem
