@@ -88,6 +88,7 @@ module.exports = {
             { title: "repeat", path: "/study/js/repeat" },
             { title: "this", path: "/study/js/this" },
             { title: "事件总线", path: "/study/js/eventbus" },
+            { title: "深浅拷贝", path: "/study/js/clone" },
           ],
         },
       ],
