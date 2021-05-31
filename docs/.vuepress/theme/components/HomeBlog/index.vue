@@ -24,6 +24,7 @@
           </p>
         </ModuleTransition>
       </div>
+      <a id="JanchorDown" class="anchor-down" @click="toBlogList"></a>
     </div>
 
     <ModuleTransition delay="0.16">
@@ -112,12 +113,40 @@ export default defineComponent({
     },
     getPagesByTags (tagInfo) {
       this.$router.push({ path: tagInfo.path })
+    }, 
+    toBlogList(){
+      window.scrollTo({
+        top: this.heroHeight,
+        behavior: "smooth"
+      });
     }
   }
 })
 </script>
 
 <style lang="stylus">
+@keyframes bounce-in {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 .home-blog {
   padding: 0;
   margin: 0px auto;
@@ -145,6 +174,33 @@ export default defineComponent({
       margin: 1.8rem auto;
       font-size: 1.6rem;
       line-height: 1.3;
+    }
+    .anchor-down {
+      display: block;
+      bottom: 45px;
+      width: 20px;
+      height: 20px;
+      font-size: 34px;
+      text-align: center;
+      animation: bounce-in 5s ease-out infinite;
+      position: absolute;
+      left: 50%;
+      bottom: 20%;
+      margin: 12rem auto 0 -10px;
+      cursor: pointer;
+      &::before {
+        position: absolute;
+        bottom: 10px;
+      }
+      &::before, &::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-right: 3px solid #fff;
+        border-top: 3px solid #fff;
+        transform: rotate(135deg );
+      }
     }
   }
   .home-blog-wrapper {
