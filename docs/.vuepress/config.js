@@ -86,6 +86,7 @@ module.exports = {
             },
             { title: "reduce", path: "/study/js/reduce" },
             { title: "this", path: "/study/js/this" },
+            { title: "create", path: "/study/js/create" },
             { title: "事件总线", path: "/study/js/eventbus" },
             { title: "深浅拷贝", path: "/study/js/clone" },
             { title: "类型判断", path: "/study/js/type" },

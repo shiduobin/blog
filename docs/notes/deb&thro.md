@@ -45,7 +45,7 @@ function throttle2(fn, delay, scope) {
       timer = setTimeout(function() {
         fn.apply(context, args);
         timer = null;
-      }, threshold);
+      }, delay);
     }
   };
 }
