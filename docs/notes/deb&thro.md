@@ -16,7 +16,7 @@ tags:
 
 ### 函数节流的实现
 
-#### 方法一：时间戳版
+#### 方法一：时间戳版-非立即执行
 
 ```js
 function throttle(fn, delay, scope) {
@@ -33,18 +33,39 @@ function throttle(fn, delay, scope) {
 }
 ```
 
-#### 方法二：定时器版
+#### 法二：定时器版
 
 ```js
-function throttle2(fn, delay, scope) {
-  let timer;
+/**
+ * @description: 函数节流
+ * @param {Function} fn 需要节流的函数
+ * @param {Number} delay 延时间隔
+ * @param {Object} scope 执行的作用域
+ * @param {Boolean} isImmediate 是否立即执行
+ * @return {Function}
+ */
+function throttle3(fn, delay, scope, isImmediate = false) {
+  let flag = true;
+  let timer = null;
+  if (isImmediate) {
+    return function() {
+      const context = scope || this;
+      if (flag) {
+        fn.apply(context, arguments);
+        flag = false;
+        timer = setTimeout(() => {
+          flag = true;
+        }, delay);
+      }
+    };
+  }
   return function() {
     const context = scope || this;
-    const args = arguments;
-    if (!timer) {
-      timer = setTimeout(function() {
-        fn.apply(context, args);
-        timer = null;
+    if (flag) {
+      flag = false;
+      let timer = setTimeout(() => {
+        fn.apply(context, arguments);
+        flag = true;
       }, delay);
     }
   };
@@ -58,18 +79,37 @@ function throttle2(fn, delay, scope) {
 ### 函数防抖的实现
 
 ```js
-function debounce(fn, delay, scope) {
+/**
+ * @description: 函数防抖
+ * @param {Function} fn 需要防抖的函数
+ * @param {Number} delay 延时间隔
+ * @param {Object} scope 执行的作用域
+ * @param {Boolean} isImmediate 是否立即执行
+ * @return {Function}
+ */
+function debounce(fn, delay, scope, isImmediate = false) {
   let timer = null;
+  let flag = true;
   // 返回函数对 debounce 作用域形成闭包
   return function() {
+    // 如果事件被触发，清除 timer 并重新开始计时
+    clearTimeout(timer);
     // setTimeout() 中用到函数环境总是 window ,故需要当前环境的副本；
     let context = scope || this,
       args = arguments;
-    // 如果事件被触发，清除 timer 并重新开始计时
-    clearTimeout(timer);
-    timer = setTimeout(function() {
-      fn.apply(context, args);
-    }, delay);
+    if (isImmediate) {
+      if (flag) {
+        fn.apply(context, args);
+        flag = false;
+      }
+      timer = setTimeout(function() {
+        flag = true;
+      }, delay);
+    } else {
+      timer = setTimeout(function() {
+        fn.apply(context, args);
+      }, delay);
+    }
   };
 }
 ```
