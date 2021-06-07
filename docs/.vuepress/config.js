@@ -131,6 +131,7 @@ module.exports = {
             { title: "种花问题", path: "/algorithm/605" },
             { title: "千分位", path: "/algorithm/1556" },
             { title: "无重复字符的最长子串", path: "/algorithm/03" },
+            { title: "反转链表", path: "/algorithm/206" },
           ],
         },
       ],
