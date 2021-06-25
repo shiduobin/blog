@@ -57,6 +57,8 @@ module.exports = {
     type: "blog",
     author: "shiduobin",
     authorAvatar: "/favicon.ico",
+    record: "京ICP备2021017828号",
+    recordLink: "https://beian.miit.gov.cn",
     startYear: "2020",
     lastUpdated: false, // string | boolean
     // 博客配置
