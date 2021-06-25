@@ -26,8 +26,8 @@ module.exports = {
       },
     ],
   ],
-  base: "/blog/",
-  dest: "./docs/.vuepress/dist",
+  base: "/",
+  dest: "./dist",
   plugins: {
     // 添加复制代码按钮
     "vuepress-plugin-code-copy": false,
@@ -91,7 +91,6 @@ module.exports = {
             { title: "create", path: "/study/js/create" },
             { title: "事件总线", path: "/study/js/eventbus" },
             { title: "深浅拷贝", path: "/study/js/clone" },
-            { title: "类型判断", path: "/study/js/type" },
           ],
         },
       ],
