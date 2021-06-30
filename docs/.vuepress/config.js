@@ -42,6 +42,17 @@ module.exports = {
     autobar: false,
     // 功能代码展示插件，展示多种语言于一窗，增加易读性
     "@vuepress-reco/extract-code": true,
+    // 评论插件
+    "@vssue/vuepress-plugin-vssue": {
+      platform: "github-v4", // v3的platform是github，v4的是github-v4
+      locale: "zh", // 语言
+      // 其他的 Vssue 配置
+      owner: "shiduobin", // github账户名
+      repo: "blog", // github一个项目的名称
+      clientId: "953675f6a75b22848212", // 注册的 Client ID
+      clientSecret: "2263adea14ec6904fd965f70a17161b4a19c50ff", // 注册的 Client Secret
+      autoCreateIssue: true, // 自动创建评论，默认是 false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了。
+    },
   },
   markdown: {
     lineNumbers: true,
