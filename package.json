@@ -9,7 +9,7 @@
     "vuepress": "^1.8.0",
     "vuepress-plugin-demo-code": "^0.5.2",
     "vuepress-plugin-nprogress": "^1.1.8",
-    "vuepress-theme-reco": "^1.6.6"
+    "vuepress-theme-reco": "^1.6.11"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",

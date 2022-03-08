@@ -1255,19 +1255,19 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@vue/composition-api@^1.0.0-beta.20":
-  version "1.0.0-rc.8"
-  resolved "https://registry.nlark.com/@vue/composition-api/download/@vue/composition-api-1.0.0-rc.8.tgz#ace0f1c8cc7d5b193825fabdc7c4b919bb182a9e"
-  integrity sha1-rODxyMx9Wxk4Jfq9x8S5GbsYKp4=
+"@vue/composition-api@1.0.0-beta.21":
+  version "1.0.0-beta.21"
+  resolved "https://registry.npmmirror.com/@vue/composition-api/-/composition-api-1.0.0-beta.21.tgz#d5a3c68afc8b569dfc3eccd69998388bb7f6a16c"
+  integrity sha512-tgbvDpLvKQ1GrII424wsoyzPCsG0oTFf38emMq495SfLY7RmUqhVIl81pvnC5489PPrCxDkbauJHJrhlcXfbTQ==
   dependencies:
-    tslib "^2.2.0"
+    tslib "^2.0.1"
 
-"@vuepress-reco/core@^1.6.2":
-  version "1.6.2"
-  resolved "https://registry.npm.taobao.org/@vuepress-reco/core/download/@vuepress-reco/core-1.6.2.tgz#b6dcd2f7a4b71b57f06857fe183af6ff0663c8b1"
-  integrity sha1-ttzS96S3G1fwaFf+GDr2/wZjyLE=
+"@vuepress-reco/core@^1.6.9":
+  version "1.6.9"
+  resolved "https://registry.npmmirror.com/@vuepress-reco/core/-/core-1.6.9.tgz#2bec013dfe11f712dedd06683981ddc4d5a977e7"
+  integrity sha512-R+PvVvJ2efPwDboTLW/l1Gabl3UsfmuuO+MhbnUtFn1LrxCM3UfCSCeIdIijLR03UoLwkEQc3Ei94gBV5srAeg==
   dependencies:
-    "@vue/composition-api" "^1.0.0-beta.20"
+    "@vue/composition-api" "1.0.0-beta.21"
     vue "^2.6.12"
     vue-demi "^0.5.3"
     vue-property-decorator "^9.1.2"
@@ -1294,11 +1294,6 @@
   version "1.0.4"
   resolved "https://registry.nlark.com/@vuepress-reco/vuepress-plugin-extract-code/download/@vuepress-reco/vuepress-plugin-extract-code-1.0.4.tgz#c50b521d8a5d1c9dfd705e245a7e920a80315a32"
   integrity sha1-xQtSHYpdHJ39cF4kWn6SCoAxWjI=
-
-"@vuepress-reco/vuepress-plugin-loading-page@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-loading-page/download/@vuepress-reco/vuepress-plugin-loading-page-1.6.0.tgz#34b72ed342dc9b15021d077ff8faeafe52146159"
-  integrity sha1-NLcu00LcmxUCHQd/+Prq/lIUYVk=
 
 "@vuepress-reco/vuepress-plugin-pagation@^1.6.0":
   version "1.6.0"
@@ -8353,10 +8348,10 @@ tslib@^1.10.0:
   resolved "https://registry.nlark.com/tslib/download/tslib-1.14.1.tgz?cache=0&sync_timestamp=1618847132149&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
 
-tslib@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.nlark.com/tslib/download/tslib-2.2.0.tgz?cache=0&sync_timestamp=1618847132149&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
-  integrity sha1-+yxHWXfjXiQTEe3iaTzuHsZpj1w=
+tslib@^2.0.1:
+  version "2.3.1"
+  resolved "https://registry.npmmirror.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
+  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
 tty-browserify@0.0.0:
   version "0.0.0"
@@ -8971,16 +8966,15 @@ vuepress-theme-antdocs@^1.2.2:
     vuepress-plugin-smooth-scroll "^0.0.10"
     vuex "^3.1.3"
 
-vuepress-theme-reco@^1.6.6:
-  version "1.6.6"
-  resolved "https://registry.npm.taobao.org/vuepress-theme-reco/download/vuepress-theme-reco-1.6.6.tgz#f286f0000b1702b9511a439469c15b0d2b1e992d"
-  integrity sha1-8obwAAsXArlRGkOUacFbDSsemS0=
+vuepress-theme-reco@^1.6.11:
+  version "1.6.11"
+  resolved "https://registry.npmmirror.com/vuepress-theme-reco/-/vuepress-theme-reco-1.6.11.tgz#9880d6318e8242637852e8cd2df4ed8a74623763"
+  integrity sha512-7q3zNRjfkuEDh9f5J3vZDvhP3W1L4xKdTn8pailDz3N64yilyF1Uf2bE+b+aDmzxYMmQUrMx6ByAFl61qgS9Gg==
   dependencies:
-    "@vue/composition-api" "^1.0.0-beta.20"
-    "@vuepress-reco/core" "^1.6.2"
+    "@vue/composition-api" "1.0.0-beta.21"
+    "@vuepress-reco/core" "^1.6.9"
     "@vuepress-reco/vuepress-plugin-back-to-top" "^1.6.0"
     "@vuepress-reco/vuepress-plugin-comments" "^1.6.0"
-    "@vuepress-reco/vuepress-plugin-loading-page" "^1.6.0"
     "@vuepress-reco/vuepress-plugin-pagation" "^1.6.0"
     "@vuepress/plugin-blog" "1.9.2"
     "@vuepress/plugin-medium-zoom" "1.5.0"
