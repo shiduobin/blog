@@ -88,34 +88,34 @@ module.exports = {
     displayAllHeaders: false,
     sidebarDepth: 2,
     sidebar: {
-      "/study/js/": [
+      "/js/": [
         {
           title: "JS",
           collapsable: false,
           children: [
             {
               title: "promise",
-              path: "/study/js/promise",
+              path: "/js/promise",
             },
-            { title: "reduce", path: "/study/js/reduce" },
-            { title: "this", path: "/study/js/this" },
-            { title: "create", path: "/study/js/create" },
-            { title: "事件总线", path: "/study/js/eventbus" },
-            { title: "深浅拷贝", path: "/study/js/clone" },
+            { title: "reduce", path: "/js/reduce" },
+            { title: "this", path: "/js/this" },
+            { title: "create", path: "/js/create" },
+            { title: "事件总线", path: "/js/eventbus" },
+            { title: "深浅拷贝", path: "/js/clone" },
           ],
         },
       ],
-      "/study/css/": [
+      "/css/": [
         {
           title: "CSS",
           collapsable: false,
           children: [
-            { title: "选择器", path: "/study/css/selected" },
-            { title: "BEM", path: "/study/css/bem" },
-            { title: "REM", path: "/study/css/rem" },
-            { title: "BFC", path: "/study/css/bfc" },
-            { title: "重绘&回流", path: "/study/css/Repaint&Reflow" },
-            { title: "垂直居中", path: "/study/css/verticalCenter" },
+            { title: "选择器", path: "/css/selected" },
+            { title: "BEM", path: "/css/bem" },
+            { title: "REM", path: "/css/rem" },
+            { title: "BFC", path: "/css/bfc" },
+            { title: "重绘&回流", path: "/css/Repaint&Reflow" },
+            { title: "垂直居中", path: "/css/verticalCenter" },
           ],
         },
       ],
